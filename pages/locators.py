@@ -1,9 +1,10 @@
 from selenium.webdriver.common.by import By
 
 
-class BasePageLocators():
+class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BASKET_LINK = (By.CSS_SELECTOR, '.header .page_inner  a.btn.btn-default')
 
 
 class MainPageLocators:
@@ -26,3 +27,8 @@ class ProductPageLocators:
     INFO_ALERT_PRODUCT_PRICE = (By.CSS_SELECTOR, '#messages .alert-info .alertinner p:first-of-type strong')
     PRODUCT_NAME = (By.CSS_SELECTOR, '.product_main h1')
     PRODUCT_PRICE = (By.CSS_SELECTOR, '.product_main > p:first-of-type')
+
+
+class BasketPageLocators:
+    BASKET_EMPTY = (By.CSS_SELECTOR, '#content_inner > p > a')
+    BASKET_ITEMS = (By.CLASS_NAME, 'basket-items')
