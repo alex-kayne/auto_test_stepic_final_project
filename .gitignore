@@ -1,0 +1,4 @@
+/.venv/
+/requirements.txt
+/__init__.py
+/.idea/
